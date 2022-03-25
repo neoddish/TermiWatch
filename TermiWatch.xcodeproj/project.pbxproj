@@ -100,6 +100,11 @@
 		5DD84FE4245F12D800E780A4 /* TermiWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "TermiWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		5DD84FE8245F132B00E780A4 /* TermiWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TermiWatch.entitlements; sourceTree = "<group>"; };
 		5DD84FE9245F134E00E780A4 /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
+		A838FABF27EBA4CA00A80413 /* PMKHealthKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PMKHealthKit; sourceTree = "<group>"; };
+		A838FAC027EBA4DC00A80413 /* CoreLocation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreLocation; sourceTree = "<group>"; };
+		A83B2EC627EBA516008D760C /* PromiseKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PromiseKit; sourceTree = "<group>"; };
+		A83B2EC727EBA527008D760C /* Foundation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Foundation; sourceTree = "<group>"; };
+		A83B2EC827EBA53A008D760C /* Swizzle */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Swizzle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +136,7 @@
 		5DD84F9C245F118000E780A4 = {
 			isa = PBXGroup;
 			children = (
+				A838FABE27EBA4CA00A80413 /* Packages */,
 				5DD84FA7245F118000E780A4 /* TermiWatch */,
 				5DD84FBD245F118300E780A4 /* TermiWatch WatchKit App */,
 				5DD84FCC245F118400E780A4 /* TermiWatch WatchKit Extension */,
@@ -196,6 +202,18 @@
 				5D083C3D245F2FE700FBAC47 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A838FABE27EBA4CA00A80413 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A838FABF27EBA4CA00A80413 /* PMKHealthKit */,
+				A838FAC027EBA4DC00A80413 /* CoreLocation */,
+				A83B2EC627EBA516008D760C /* PromiseKit */,
+				A83B2EC727EBA527008D760C /* Foundation */,
+				A83B2EC827EBA53A008D760C /* Swizzle */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,14 +545,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "TermiWatch WatchKit Extension/TermiWatch WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C89KNBM28S;
+				DEVELOPMENT_TEAM = GYLAHK7P29;
 				INFOPLIST_FILE = "TermiWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoddish.TermiWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -550,14 +568,14 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "TermiWatch WatchKit Extension/TermiWatch WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C89KNBM28S;
+				DEVELOPMENT_TEAM = GYLAHK7P29;
 				INFOPLIST_FILE = "TermiWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoddish.TermiWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -573,10 +591,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C89KNBM28S;
+				DEVELOPMENT_TEAM = GYLAHK7P29;
 				IBSC_MODULE = TermiWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "TermiWatch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoddish.TermiWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -592,10 +610,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C89KNBM28S;
+				DEVELOPMENT_TEAM = GYLAHK7P29;
 				IBSC_MODULE = TermiWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "TermiWatch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoddish.TermiWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -611,14 +629,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TermiWatch/TermiWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C89KNBM28S;
+				DEVELOPMENT_TEAM = GYLAHK7P29;
 				INFOPLIST_FILE = TermiWatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoddish.TermiWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -631,14 +649,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TermiWatch/TermiWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C89KNBM28S;
+				DEVELOPMENT_TEAM = GYLAHK7P29;
 				INFOPLIST_FILE = TermiWatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoddish.TermiWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
