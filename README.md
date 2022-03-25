@@ -1,3 +1,12 @@
+Resolve the xcode13 error about remote dependencies by localizing the remote dependencies.
+
+Download zip：
+https://github.com/neoddish/TermiWatch/archive/refs/heads/master.zip
+
+then follow the steps in the original instruction, noting that the `kuglee` has been changed to `neoddish`.
+
+----
+
 # TermiWatch
 
 Terminal Watch Face for Apple Watch.
